@@ -5,7 +5,6 @@
  *
  **/
 
-package exercises;
 
 public class PrimitiveTypesExercise01 {
     public static void main(String[] args) {
