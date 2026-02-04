@@ -15,7 +15,16 @@ public class IfElseExercise02 {
         // - Below 50.00: Express Shipping (20.00).
         // Initialize 'shippingCost' with the correct value.
 
+            double cartValue = 75.50;
+            double shippingCost;
 
+            if (cartValue >= 100.0) {
+                shippingCost = 0.0;
+            } else if (cartValue >= 50.0) {
+                shippingCost = 10.0;
+            } else {
+                shippingCost = 20.0;
+            }
 
 
         // 2. Logical AND (Strict Validation):
@@ -23,7 +32,15 @@ public class IfElseExercise02 {
         // IMPLEMENTATION: Check if 'monthlyIncome' is greater than 3000 AND 'hasCleanRecord' is true.
         // If both are true, set 'loanStatus' to "Approved". Otherwise, "Rejected".
 
+            double monthlyIncome = 3500.00;
+            boolean hasCleanRecord = true;
+            String loanStatus;
 
+            if (monthlyIncome > 3000 && hasCleanRecord) {
+                loanStatus = "Approved";
+            } else {
+                loanStatus = "Rejected";
+            }
 
 
         // 3. Logical OR (Flexible Eligibility):
@@ -31,13 +48,22 @@ public class IfElseExercise02 {
         // IMPLEMENTATION: Use the OR operator (||) to check if 'isStudent' or 'isSenior' is true.
         // Set boolean 'eligibleForDiscount' to true if either condition is met.
 
+            boolean isStudent = false;
+            boolean isSenior = true;
+            boolean eligibleForDiscount;
 
+            if (isStudent || isSenior) {
+                eligibleForDiscount = true;
+            } else {
+                eligibleForDiscount = false;
+            }
 
 
         System.out.println("--- Logic Check Report ---");
-        System.out.println("Cart Value:_ | Shipping Cost: ");
-        System.out.println("Loan Application: ");
-        System.out.println("Discount Eligibility: ");
+        System.out.println("Cart Value: " + cartValue + " | Shipping Cost: " + shippingCost);
+        System.out.println("Loan Application: " + loanStatus);
+        System.out.println("Discount Eligibility: " + eligibleForDiscount);
 
+        System.out.println("Exercise 02: Else-If and Logical Operators practiced.");
     }
 }
