@@ -15,7 +15,23 @@ public class SwitchCaseExercise01 {
         // - Floor 3: Pool
         // - Any other floor: Restricted Area
         
+            int floorNumber = 2;
+            String location;
 
+            switch (floorNumber) {
+                case 1:
+                    location = "Lobby";
+                    break;
+                case 2:
+                    location = "Gym";
+                    break;
+                case 3:
+                    location = "Pool";
+                    break;
+                default:
+                    location = "Restricted Area";
+                    break;
+            }
 
 
         // 2. String Switch (File Extension Handler):
@@ -26,7 +42,23 @@ public class SwitchCaseExercise01 {
         // - "jar": Executable Archive
         // - Unknown extensions: Unknown Format
 
+            String extension = "java";
+            String fileType;
 
+            switch (extension) {
+                case "java":
+                    fileType = "Source Code";
+                    break;
+                case "class":
+                    fileType = "Bytecode File";
+                    break;
+                case "jar":
+                    fileType = "Executable Archive";
+                    break;
+                default:
+                    fileType = "Unknown Format";
+                    break;
+            }
 
 
         // 3. Char Switch (CRUD Operations):
@@ -38,13 +70,33 @@ public class SwitchCaseExercise01 {
         // - 'D' -> Delete
         // - Ensure invalid chars result in "Invalid Operation".
 
+            char commandChar = 'U';
+            String operation;
 
+            switch (commandChar) {
+                case 'C':
+                    operation = "Create";
+                    break;
+                case 'R':
+                    operation = "Read";
+                    break;
+                case 'U':
+                    operation = "Update";
+                    break;
+                case 'D':
+                    operation = "Delete";
+                    break;
+                default:
+                    operation = "Invalid Operation";
+                    break;
+            }
 
 
         System.out.println("--- Switch Logic Report ---");
-        System.out.println("Elevator Location: ");
-        System.out.println("File Type: ");
-        System.out.println("Database Task: ");
+        System.out.println("Elevator Location: " + location);
+        System.out.println("File Type: " + fileType);
+        System.out.println("Database Task: " + operation);
 
+        System.out.println("Exercise 01: Classic Switch Case practiced.");
     }
 }
