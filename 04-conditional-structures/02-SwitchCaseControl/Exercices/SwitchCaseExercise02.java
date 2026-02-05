@@ -16,7 +16,34 @@ public class SwitchCaseExercise02 {
         // - Months 10, 11, 12: "Q4 - Fourth Quarter"
         // - Invalid months: "Unknown Quarter"
 
+            int monthIndex = 5;
+            String quarter;
 
+            switch (monthIndex) {
+                case 1:
+                case 2:
+                case 3:
+                    quarter = "Q1 - First Quarter";
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    quarter = "Q2 - Second Quarter";
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    quarter = "Q3 - Third Quarter";
+                    break;
+                case 10:
+                case 11:
+                case 12:
+                    quarter = "Q4 - Fourth Quarter";
+                    break;
+                default:
+                    quarter = "Unknown Quarter";
+                    break;
+            }
 
 
         // 2. Grouping Characters (Vowel Checker):
@@ -26,7 +53,21 @@ public class SwitchCaseExercise02 {
         // - All other characters: Set 'type' to "Consonant/Other".
         // (Tip: Stack the cases to share the "Vowel" assignment).
 
+            char letter = 'e';
+            String type;
 
+            switch (letter) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    type = "Vowel";
+                    break;
+                default:
+                    type = "Consonant/Other";
+                    break;
+            }
 
 
         // 3. Grouping Strings (Business Days):
@@ -36,13 +77,31 @@ public class SwitchCaseExercise02 {
         // - "Saturday", "Sunday": "Weekend"
         // - Default: "Invalid Input"
 
+            String dayOfWeek = "Saturday";
+            String category;
 
+            switch (dayOfWeek) {
+                case "Monday":
+                case "Tuesday":
+                case "Wednesday":
+                case "Thursday":
+                case "Friday":
+                    category = "Workday";
+                    break;
+                case "Saturday":
+                case "Sunday":
+                    category = "Weekend";
+                    break;
+                default:
+                    category = "Invalid Input";
+                    break;
+            }
 
 
         System.out.println("--- Grouping Logic Report ---");
-        System.out.println("Financial Period: ");
-        System.out.println("Character Type: ");
-        System.out.println("Day Category: ");
+        System.out.println("Financial Period: " + quarter);
+        System.out.println("Character Type: " + type);
+        System.out.println("Day Category: " + category);
 
+        System.out.println("Exercise 02: Switch fall-through practiced.");
     }
-}
