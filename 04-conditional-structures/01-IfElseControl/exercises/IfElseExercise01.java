@@ -53,6 +53,6 @@ public class IfElseExercise01 {
         System.out.println("Number " + number + " is: " + parity);
         System.out.println("Security Gate: " + accessMsg);
 
-        System.out.println("Exercise 01: Basic conditionalÇL completed.");
+        System.out.println("Exercise 01: Basic conditional completed.");
     }
 }
