@@ -1,3 +1,4 @@
+package Exercises;
 /**
  * EXERCISE: Nested Logic, Scope & Pitfalls
  * CONCEPT: Managing hierarchical decisions (Nested Ifs), understanding

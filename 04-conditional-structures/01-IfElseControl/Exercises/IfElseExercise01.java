@@ -1,3 +1,4 @@
+package Exercises;
 /**
  * EXERCISE: Basic Control Flow (If & If-Else)
  * CONCEPT: Implementing decision logic based on system states.
