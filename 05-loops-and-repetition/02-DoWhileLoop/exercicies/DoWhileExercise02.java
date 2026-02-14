@@ -13,7 +13,13 @@ public class DoWhileExercise02 {
         // IMPLEMENTATION: Set 'isSystemReady' to false, but use a 'do-while'
         // to set 'bootAttempts' to 1 before the condition is even checked.
 
+            boolean isSystemReady = false;
+            int bootAttempts = 0;
 
+            do {
+                bootAttempts++;
+                
+            } while (isSystemReady);
 
 
         // 2. Simulated Menu Selection:
@@ -23,7 +29,17 @@ public class DoWhileExercise02 {
         // - Choice 0: "Exit".
         // The loop should repeat while 'userChoice' is not 0.
 
+            int userChoice = 1; 
+            String lastAction = "None";
 
+            do {
+                if (userChoice == 1) {
+                    lastAction = "Processing Data";
+                    userChoice = 0; 
+                } else {
+                    lastAction = "Idle";
+                }
+            } while (userChoice != 0);
 
 
         // 3. Early Exit with 'break':
@@ -31,13 +47,25 @@ public class DoWhileExercise02 {
         // IMPLEMENTATION: Iterate a 'sensorValue' from 1 to 10.
         // If 'sensorValue' reaches 5, simulate a "Critical Error" and 'break'.
 
+            int sensorValue = 1;
+            int finalReading = 0;
+            String safetyStatus = "Safe";
 
+            do {
+                if (sensorValue == 5) {
+                    safetyStatus = "CRITICAL ERROR";
+                    break;
+                }
+                finalReading = sensorValue;
+                sensorValue++;
+            } while (sensorValue <= 10);
 
 
         System.out.println("--- Do-While Logic & Control Report ---");
-        System.out.println("System Boot Attempts: ");
-        System.out.println("Last Menu Action: ");
-        System.out.println("Safety Status: _ | Last Reading: ");
+        System.out.println("System Boot Attempts: " + bootAttempts);
+        System.out.println("Last Menu Action: " + lastAction);
+        System.out.println("Safety Status: " + safetyStatus + " | Last Reading: " + finalReading);
 
+        System.out.println("Exercise 02: Menu logic and 'break' interaction practiced.");
     }
 }
