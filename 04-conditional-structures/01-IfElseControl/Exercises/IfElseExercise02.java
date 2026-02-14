@@ -1,4 +1,3 @@
-package Exercises;
 /**
  * EXERCISE: Advanced Conditional Logic (Else-If & Operators)
  * CONCEPT: Handling multiple mutually exclusive conditions (Ladder)
