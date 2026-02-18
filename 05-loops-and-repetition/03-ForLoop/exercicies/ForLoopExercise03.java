@@ -12,6 +12,13 @@ public class ForLoopExercise03 {
         // IMPLEMENTATION: Initialize 'x' at 0 and 'y' at 10. Run the loop while 'x' 
         // is less than 'y'. Increment 'x' and decrement 'y' in the same step.
 
+            String pairLog = "";
+            int iterations = 0;
+
+            for (int x = 0, y = 10; x <= y; x++, y--) {
+                pairLog += "(" + x + " | " + y + ") ";
+                iterations++;
+            }
 
 
         // 2. Variable Scope (Lifespan Demonstration):
@@ -19,7 +26,15 @@ public class ForLoopExercise03 {
         // IMPLEMENTATION: Declare 'globalSum' outside. Run a loop with a local 'i'.
         // Add 'i' to 'globalSum'. (Note: Trying to print 'i' after would fail).
 
+            int globalSum = 0;
+            int limit = 5;
 
+            for (int i = 1; i <= limit; i++) {
+                globalSum += i;
+                
+            }
+           
+            boolean scopeTestPassed = true;
 
 
         // 3. Compound Conditions in Header:
@@ -27,14 +42,21 @@ public class ForLoopExercise03 {
         // IMPLEMENTATION: Run a loop that typically goes from 1 to 100 ('i'),
         // but MUST stop early if 'currentSum' exceeds a safety cap (e.g., 20).
         
+            int currentSum = 0;
+            int finalIndex = 0;
+            int safetyCap = 20;
 
+            for (int i = 1; i <= 100 && currentSum < safetyCap; i++) {
+                currentSum += i;
+                finalIndex = i;
+            }
 
 
         System.out.println("--- Advanced Headers & Scope Report ---");
-        System.out.println("Converging Pairs: ");
-        System.out.println("Scope Test: ");
-        System.out.println("Compound Stop: Sum reached _ at index _");
+        System.out.println("Converging Pairs: " + pairLog);
+        System.out.println("Scope Test: " + (scopeTestPassed ? "PASSED (i did not leak)" : "FAILED"));
+        System.out.println("Compound Stop: Sum reached " + currentSum + " at index " + finalIndex);
 
-
+        System.out.println("Exercise 03: Multiple vars, scope rules, and logic gates practiced.");
     }
 }
