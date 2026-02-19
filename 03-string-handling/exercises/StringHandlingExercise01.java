@@ -1,3 +1,4 @@
+package exercises;
 /**
  * EXERCISE: String Creation and Immutability
  * CONCEPT: Understanding the String Pool, the difference between

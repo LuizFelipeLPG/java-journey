@@ -1,3 +1,4 @@
+package exercises;
 /**
  * EXERCISE: String Slicing, Modification, and Conversion
  * CONCEPT: Extracting substrings, cleaning/replacing text data, 

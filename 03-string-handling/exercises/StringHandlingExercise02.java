@@ -1,3 +1,4 @@
+package exercises;
 /**
  * EXERCISE: String Comparison and Inspection
  * CONCEPT: Mastering string comparison methods (.equals vs ==),
