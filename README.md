@@ -10,11 +10,11 @@ The purpose of this repository is to document my theoretical understanding and p
 ## 📁 Roadmap & Progress
 
 - [x] **01. Primitive Data Types** - Understanding `int`, `double`, `boolean`, `char`, etc.
-- [ ] **02. Operators & Casting** - Arithmetic, logical operators, and type conversion.
-- [ ] **03. String Handling** - String pool, immutability, and comparison methods (`equals` vs `==`).
-- [ ] **04. Conditional Structures** - Flow control with `if`, `else`, and `switch`.
-- [ ] **05. Loops & Repetition** - Iterating with `for`, `while`, and `do-while`.
-- [ ] **06. Methods & Functions** - Logic abstraction, parameters, and return types.
+- [x] **02. Operators & Casting** - Arithmetic, logical operators, and type conversion.
+- [x] **03. String Handling** - String pool, immutability, and comparison methods (`equals` vs `==`).
+- [x] **04. Conditional Structures** - Flow control with `if`, `else`, and `switch`.
+- [x] **05. Loops & Repetition** - Iterating with `for`, `while`, and `do-while`.
+- [x] **06. Methods & Functions** - Logic abstraction, parameters, and return types.
 - [ ] **07. Visibility Modifiers** - Access levels (private, default, protected, public).
 - [ ] **08. Object-Oriented Programming (OOP)** - *Coming Soon*
 
