@@ -9,19 +9,28 @@ The purpose of this repository is to document my theoretical understanding and p
 
 ## 📁 Roadmap & Progress
 
+### 🟢 Phase 1: Fundamentals
 - [x] **01. Primitive Data Types** - Understanding `int`, `double`, `boolean`, `char`, etc.
 - [x] **02. Operators & Casting** - Arithmetic, logical operators, and type conversion.
-- [x] **03. String Handling** - String pool, immutability, and comparison methods (`equals` vs `==`).
+- [x] **03. String Handling** - String pool, immutability, and comparison methods.
 - [x] **04. Conditional Structures** - Flow control with `if`, `else`, and `switch`.
 - [x] **05. Loops & Repetition** - Iterating with `for`, `while`, and `do-while`.
 - [x] **06. Methods & Functions** - Logic abstraction, parameters, and return types.
-- [ ] **07. Visibility Modifiers** - Access levels (private, default, protected, public).
-- [ ] **08. Object-Oriented Programming (OOP)** - *Coming Soon*
+
+### 🔵 Phase 2: Object-Oriented Programming (OOP)
+- [ ] **07. Classes and Objects** - Blueprints, instances, and object state/behavior.
+- [ ] **08. Constructors** - Object initialization and the `this` keyword.
+- [ ] **09. Encapsulation & Visibility** - Access modifiers (`private` to `public`) and Getters/Setters.
+- [ ] **10. Inheritance** - Code reuse with `extends` and the `super` keyword.
+- [ ] **11. Polymorphism** - Method Overloading and Overriding (`@Override`).
+- [ ] **12. Abstraction** - Abstract classes and Interfaces (defining contracts).
+- [ ] **13. Enumerations** - Handling fixed sets of constants with `enum`.
+- [ ] **14. Exception Handling** - Robust code with `try-catch-finally` and custom exceptions.
 
 ## 🚀 How to use this repo
 Each folder contains:
 1. A **Theory File**: A `.java` file with extensive comments explaining how the concept works.
-2. An **Exercises Folder**: Practical challenges implemented by me to fix the content.
+2. An **Exercises Folder**: Practical challenges implemented to solidify the content.
 
 ## 📜 License and Intellectual Property
 This repository is a public log of my **personal learning journey**.
