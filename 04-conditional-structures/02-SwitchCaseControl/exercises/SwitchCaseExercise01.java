@@ -1,3 +1,4 @@
+package exercises;
 /**
  * EXERCISE: Basic Switch Statement (Classic Syntax)
  * CONCEPT: Replacing multiple equality checks with a jump table.

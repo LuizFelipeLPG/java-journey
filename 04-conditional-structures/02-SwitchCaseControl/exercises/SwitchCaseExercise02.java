@@ -105,3 +105,4 @@ public class SwitchCaseExercise02 {
 
         System.out.println("Exercise 02: Switch fall-through practiced.");
     }
+}

@@ -1,3 +1,4 @@
+package exercises;
 /**
  * EXERCISE: Modern Switch Expressions & Advanced Features (Java 14+)
  * CONCEPT: Switch Expressions with arrow syntax (->), multiple case labels,
